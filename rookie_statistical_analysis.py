@@ -77,7 +77,7 @@ rookie_data_train_features = pd.DataFrame.from_csv('C:/Users/stav/Desktop/study/
 rookie_data_test_features = pd.DataFrame.from_csv('C:/Users/stav/Desktop/study/nba/rookies_test_EFF_rank.csv')
 rookie_data_train = prepare_data(rookie_data_train_features)
 rookie_data_test = prepare_data(rookie_data_test_features)
-#preform_regression(rookie_data_train,rookie_data_test)
+preform_regression(rookie_data_train,rookie_data_test)
 preform_rand_forest(rookie_data_train,rookie_data_test)
 
 
