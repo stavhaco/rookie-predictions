@@ -1,12 +1,15 @@
 import requests
-import matplotlib.pyplot as plt
 import pandas as pd
-import seaborn as sns
-from nba_py import player
-from nba_py.player import get_player
 from sklearn.model_selection import train_test_split
 
+
 def rookies_by_year(start_year=1997,end_year=2010):
+    '''
+    scrapping nba.com by years for rookies data, concat the data and split it to train and test data in csv files.
+    :param start_year: 
+    :param end_year: 
+    :return: dataframe of combined data from wanted years
+    '''
     frames = []
     for year in range(start_year,end_year,1):
         headers_mozila = {
